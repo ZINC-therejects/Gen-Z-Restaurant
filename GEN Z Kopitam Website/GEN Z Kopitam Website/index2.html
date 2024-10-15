@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!--Arrow icon link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--Home Button Icon link-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--SwiperJS CSS Linking-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>GEN Z Kopitam</title>
+    </head>
+<body id="body__index1">
+    <!--NavBar section-->
+   <nav class="navbar">
+<div class="navbar__container">
+    
+
+    <!--Navbar On the Side-->
+    <ul class="navbar__sidebar">
+        
+        <li onclick=hideSidebar() class="navbar__itemsidebar"> 
+            <a class="navbar__item__text__sidebar" href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+        </li>
+
+        <li class="navbar__itemsidebar"> 
+            <a class="navbar__item__text__sidebar" href="foodmenu2.html"><h2>Food Menu</h2></a>
+        </li>
+
+        <li class="navbar__itemsidebar">
+            <a class="navbar__item__text__sidebar" href="cart.html"><h1>Food Cart</h1></a>
+        </li>
+
+        <li class="navbar__itemsidebar">
+            <a class="navbar__item__text__sidebar" href="#footer__id"><h1>Contact Us</h1></a>
+        </li>
+
+        <li class="navbar__itemsidebar">
+            <a class="navbar__item__text__sidebar" href="#footer__id"><h1>Support Us</h1></a>
+        </li>
+
+        <li class="navbar__itemsidebar">
+            <a class="navbar__item__text__sidebar" href="book.html"><h1>Booking</h1></a>
+        </li>
+
+        <li class="navbar__btn__side">
+            <a href="index.php" class="login__button__side">
+        Account
+            </a>
+        </li>
+    
+    </ul>
+    <!--Till here for the side bar-->
+    <ul class="navbar__menu1">
+
+        <li class="navbar__homebutton ">
+            <a class="homebutton" id="navbar__logo" href="index2.html"><h1><i class="fa-solid fa-bowl-food"></i>  GEN Z Kopitam</h1></a>
+        </li>
+
+        <li class="navbar__item hideOnMobile"> 
+            <a class="navbar__item__text" href="foodmenu2.html"><h2>Food Menu</h2></a>
+        </li>
+
+        <li class="navbar__item hideOnMobile">
+            <a class="navbar__item__text" href="cart.html"><h1>Food Cart</h1></a>
+        </li>
+
+        <li class="navbar__item hideOnMobile">
+            <a id="scroll" class="navbar__item__text" href="#footer__id"><h1>Contact Us</h1></a>
+        </li>
+
+        <li class="navbar__item hideOnMobile">
+            <a id="link" class="navbar__item__text" href="#footer__id"><h1>Support Us</h1></a>
+        </li>
+
+        <li class="navbar__item hideOnMobile">
+            <a class="navbar__item__text__sidebar" href="book.html"><h1>Booking</h1></a>
+        </li>
+
+        <li class="navbar__btn hideOnMobile">
+            <a href="index.php" class="login__button">
+        Account
+            </a>
+        </li>
+
+        <li class="navbar__item  menu__button" onclick=showSidebar()><a class="navbar__item__text" href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </a>
+    </li>
+
+    </ul>
+   
+    
+</div>
+   </nav>
+   
+    <!--Section 1 of the page-->
+   <div class="section1__container">
+   
+    
+        <ul>
+            <h1 class="section1__text__h1">BEST DISHES IN MALAYSIA</h1>
+            <br><h2 class="section1__text__secondtext__h1">DELICIOUS FOOD MENU</h2><br>
+            <h2 class="section1__text__h2">What are you waiting for ?</h2><br>
+            <button class="main__btn__h3"><a id="scroll-link" class="section1__text__h3" href="#Special">Choose Your Food</a></button><br>
+            <div class="section1__text">
+                <div class="main__pic__container">
+                <img id="main__pic" src="image/burger.webp" alt="burger_pic">
+            </div>
+        </ul>
+
+        
+
+    </div>
+
+    <div id="Special"></div>
+    <div class="section2__words">
+        <h1>Our GEN Z Special</h1>
+    </div>
+    
+
+   <!--Img Card/Slider-->
+   <div class="img__card__body">
+    <div class="section2__container__img__card swiper">
+        <div class="card-wrapper">
+            <ul class="section2__cardlist swiper-wrapper">
+
+                <li class="section2__carditem swiper-slide">
+                    <a data-tab="tab1" class="section2__cardlink tab-link active" href="foodmenu2.html">
+                        <img data-tab="tab1" class="section2__cardimg" src="image/pizza.jpg" alt="card_pic4">
+                        <p data-tab="tab1" class="badge4">Pizza</p>
+                        <h2 data-tab="tab1" class="section2__cardtitle">Get the best Pizza's here in Malaysia. GEN Z Kopitam only</h2>
+                        <button data-tab="tab1" class="section2__cardbtn material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li>
+
+                <li class="section2__carditem swiper-slide">
+                    <a data-tab="tab2" class="section2__cardlink tab-link" href="foodmenu2.html">
+                        <img data-tab="tab2" class="section2__cardimg" src="image/burger.webp" alt="card_pic1">
+                        <p data-tab="tab2" class="badge">Burger</p>
+                        <h2 data-tab="tab2" class="section2__cardtitle">Best Burger's here in Malaysia. Cheese, salad, beef, or all.</h2>
+                        <button data-tab="tab2" class="section2__cardbtn material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li>
+
+
+                <li class="section2__carditem swiper-slide">
+                    <a data-tab="tab3" class="section2__cardlink tab-link" href="foodmenu2.html">
+                        <img data-tab="tab3" class="section2__cardimg" src="image/nasilemak.jpeg" alt="card_pic3">
+                        <p data-tab="tab3" class="badge3">Nasi</p>
+                        <h2 data-tab="tab3" class="section2__cardtitle">This is Nasi lemak, and more like Nasi Goreng.</h2>
+                        <button data-tab="tab3" class="section2__cardbtn material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li>
+
+                <li class="section2__carditem swiper-slide">
+                    <a data-tab="tab4" class="section2__cardlink tab-link" href="foodmenu2.html">
+                        <img data-tab="tab4" class="section2__cardimg" src="image/roticanai.jpeg" alt="card_pic2">
+                        <p data-tab="tab4" class="badge2">Roti Canai</p>
+                        <h2 data-tab="tab4" class="section2__cardtitle">Taste abit of Malaysia's specialty Roti Canai's</h2>
+                        <button data-tab="tab4" class="section2__cardbtn material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li>
+
+                <li class="section2__carditem swiper-slide">
+                    <a data-tab="tab5" class="section2__cardlink tab-link" href="foodmenu2.html">
+                        <img data-tab="tab5" class="section2__cardimg" src="image/wan tan mee.jpg" alt="card_pic5">
+                        <p data-tab="tab5" class="badge5">Noodles</p>
+                        <h2 data-tab="tab5" class="section2__cardtitle">This is Wan Tan Mee, try more noodles like Maggie and more.</h2>
+                        <button data-tab="tab5" class="section2__cardbtn material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+               </div>
+    </div>
+</div>
+
+</div>
+
+<!--Footer Section-->
+<div id="footer__id" class="footer__container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>Contact Us</h2>
+                No. 01156299869
+            </div>
+        </div>
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>Location</h2>
+                123 Jalan Selera Utama,
+10400 George Town, Penang, Malaysia
+            </div>
+            <div class="footer__link--items">
+                <h2>Support Us</h2>
+                <a href="feedback.html">Feedback</a>
+            </div>
+        </div>
+    </div>
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+                <a href="index2.html" id="footer__logo"><i class="fa-solid fa-bowl-food">
+               </i>&nbsp;GEN Z Kopitam</a>
+            </div>
+            <p class="website__rights"> GEN Z Kopitam. All rights
+                reserved</p>
+                <div class="social__icons">
+                    <a href="#" class="social__icon--link" 
+                    target="_blank">
+                      <i class="fab fa-facebook"></i>  
+                    </a>
+                    <a href="#" class="social__icon--link" 
+                    target="_blank">
+                        <i class="fab fa-instagram"></i>  
+                      </a>
+                      <a href="#" class="social__icon--link" 
+                      target="_blank">
+                        <i class="fab fa-twitter"></i>  
+                      </a>
+                      <a href="#" class="social__icon--link" 
+                      target="_blank">
+                        <i class="fab fa-youtube"></i>  
+                      </a>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<!--SwiperJS script Link-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!--Custom Link Script-->
+   <script src="script.js"></script>
+
+<!--For the Side of the navbar-->
+   <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.navbar__sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.navbar__sidebar')
+        sidebar.style.display = 'none'
+    }
+   </script>
+  
+
+ <!--Test, if i have any ill do it here duh-->
+        
+   
+
+</body>
+</html>
